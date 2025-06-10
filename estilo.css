@@ -1,0 +1,164 @@
+body{
+    margin:20px ;
+    padding: 10px;
+    
+    background-color: lightseagreen;
+    color:#333;
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.p1{
+    text-align: justify;
+
+}
+
+.lista li {
+    margin-bottom: 20px;
+    padding: 10px;
+    list-style-type: none;
+
+}
+.exemplo {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+img {  
+    display: block;
+    width: 100%;
+    max-width: 612px;
+    height: auto;
+ 
+    margin: 30px auto;
+    padding: 15px;
+    
+    border-radius: 50px;
+
+}
+
+.tabela {
+    width: 100%;
+    max-width:800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    box-shadow: 0px 4px 8px;
+    color: #000;
+    
+}
+
+.tabela th, td {
+   padding: 5px 10px;
+   text-align: center;
+   
+   border: 2px solid black;
+   background-color: #f9f9f9;
+   
+}
+
+.tabela td img{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+
+    margin: 10px auto;
+    padding: 5px;
+    
+}
+a:hover{
+    color: green;
+    
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    max-width:800px; 
+    
+    margin: 30px auto;
+    padding: 15px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 12px;
+    
+    background-color: #357ec7;
+    color: #fff;
+
+}
+
+.msgaleatoria {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    min-height: 80px;
+    
+    margin: 20px auto;
+    padding: 15px;
+
+    
+    border-radius: 8px;
+
+    
+    font-size: 1.7em;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+    
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    
+    color: #191970;
+    
+}
+
+@keyframes entradadotexto {
+    0%{
+    
+        opacity: 0;
+        transform: translateX(-100%);
+        
+    }
+
+    50%{
+
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+.animacaoinicio {
+
+    animation: entradadotexto 1s ease-out forwards;
+
+}
+
+.fimdamsg {
+
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+
+}
